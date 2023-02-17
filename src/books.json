@@ -1,0 +1,169 @@
+{
+  "business": [
+    {
+      "id": "63ca7627f79ebdac69926ffc",
+      "image": [
+        ""
+      ],
+      "category": "business",
+      "author": "Catherine Case",
+      "title": "Covert Street, Bonanza, Washington",
+      "rating": 3,
+      "year": 1972,
+      "isBooked": true,
+      "bookedTill": "2024-11-09T05:28:02 -03:00"
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": [
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334"
+      ],
+      "category": "business",
+      "author": "Lenore Delaney",
+      "title": "Losee Terrace, Winfred, Louisiana",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334"
+      ],
+      "category": "business",
+      "author": "Katie Terry",
+      "title": "Fair Street, Stewart, Nevada",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://readrate.com/img/pictures/book/292/29295/29295/w240h400-0cce0aa2.jpg",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613"
+      ],
+      "category": "business",
+      "author": "Tucker Langley",
+      "title": "Riverdale Avenue, Hendersonville, Michigan",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    }
+  ],
+  "detective": [
+    {
+      "id": "63ca7605925148fe9a388088",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://readrate.com/img/pictures/book/292/29295/29295/w240h400-0cce0aa2.jpg",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613"
+      ],
+      "category": "detective",
+      "author": "Annabelle Valentine",
+      "title": "Sedgwick Street, Collins, Northern Mariana Islands",
+      "rating": 4,
+      "year": 1925,
+      "isBooked": true,
+      "bookedTill": "2024-04-13T05:56:43 -03:00"
+    }
+  ],
+  "children": [
+    {
+      "id": "63ca716d6eb160eac2bc0a53",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://readrate.com/img/pictures/book/292/29295/29295/w240h400-0cce0aa2.jpg",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613"
+      ],
+      "category": "children",
+      "author": "Jessie Nunez",
+      "title": "Stockton Street, Vivian, Missouri",
+      "rating": 1,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2023-11-17T05:38:20 -03:00"
+    }
+  ],
+  "foreign": [
+    {
+      "id": "63ca717a8cab2a2d48c7abbc",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://readrate.com/img/pictures/book/292/29295/29295/w240h400-0cce0aa2.jpg",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613"
+      ],
+      "category": "foreign",
+      "author": "Lana Ray",
+      "title": "India Street, Ellerslie, Illinois",
+      "rating": 0,
+      "year": 1933,
+      "isBooked": true,
+      "bookedTill": "2023-10-25T11:27:42 -03:00"
+    }
+  ],
+  "history": [
+    {
+      "id": "63ca718e7080ac88f456ac17",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://readrate.com/img/pictures/book/292/29295/29295/w240h400-0cce0aa2.jpg",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613"
+      ],
+      "category": "history",
+      "author": "Caitlin Adams",
+      "title": "Poly Place, Como, Northern Mariana Islands",
+      "rating": 5,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": "2023-08-18T07:28:13 -03:00"
+    }
+  ],
+  "classic": [
+    {
+      "id": "63ca71a5ccf1256a2427ee8e",
+      "image": [
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/e6de66ef42bf48f7cf7be4842f52f429/363x561q80/books79/783186/cover.jpg?1615476334",
+        "https://readrate.com/img/pictures/book/292/29295/29295/w240h400-0cce0aa2.jpg",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613",
+        "https://img4.labirint.ru/rc/1b253329aceb87812dc132b397d2c754/363x561q80/books19/185950/cover.jpg?1280394613"
+      ],
+      "category": "classic",
+      "author": "Obrien Atkinson",
+      "title": "Degraw Street, Gulf, Virginia",
+      "rating": 3,
+      "year": 2021,
+      "isBooked": false,
+      "bookedTill": "2023-08-09T07:50:26 -03:00"
+    }
+  ],
+  "psychology": [],
+  "computers": [],
+  "culture": [],
+  "science": [],
+  "publicistic": [],
+  "references": [],
+  "scifi": [],
+  "humor": []
+}

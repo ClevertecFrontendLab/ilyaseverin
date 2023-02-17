@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper button {
+    margin-left: 10px;
+}
+
+.left {
+    display: flex;
+}
+
+.searchInput {
+    width: 350px;
+    height: 38px;
+
+    background: #FFFFFF;
+    /* плашка */
+    border: none;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+
+    background-image: url("./img/Search.svg");
+    background-repeat: no-repeat;
+    background-position: 17px;
+
+    /*Позиционируем*/
+    outline: none;
+    /*закругляем углы для остальных браузеров*/
+    padding-left: 40px;
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .searchInput {
+        width: 274px;
+
+    }
+}
+
+
+
+
+.right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    height: 32px;
+    background: #FFFFFF;
+
+    border: none;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+
+
+}
+
+.gridButton {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgerButton {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #FFFFFF;
+
+    filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButtonLarge {
+    width: 150px;
+    height: 38px;
+    border: none;
+    background: #FFFFFF;
+
+
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButtonSmall {
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: #FFFFFF;
+
+
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButtonLarge img {
+    margin-right: 5%;
+}
+
+.SearchButton {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #FFFFFF;
+
+
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("./img/Search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .searchInput {
+        width: 150px;
+    }
+
+    .filterButtonLarge {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 599px) {
+
+
+    .filterButtonSmall {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        margin-top: 35px;
+    }
+
+    .searchInput {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .filterButtonLarge {
+        display: none;
+    }
+
+    .searchInput {
+        display: none;
+    }
+
+    .burgerButton {
+        width: 32px;
+        height: 32px;
+    }
+
+    .gridButton {
+        width: 32px;
+        height: 32px
+    }
+
+    .filterButtonSmall {
+        width: 32px;
+        height: 32px
+    }
+
+
+}
+
+@media screen and (min-width: 321px) {
+
+    .SearchButton {
+        display: none;
+    }
+}
+
+.none {
+    display: none;
+
+}
+
+.searchInputMobile {
+
+
+    background-position: center;
+
+    width: 260px;
+    height: 32px;
+    background: #FFFFFF;
+
+    border: none;
+    border-radius: 599px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.closeInput[type="submit"] {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: #FFFFFF;
+    background-image: url("./img/close.svg")
+}

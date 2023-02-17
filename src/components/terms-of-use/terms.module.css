@@ -1,0 +1,54 @@
+.list li {
+    margin-left: 30px;
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+.list {
+    margin-bottom: 32px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* main/dark */
+
+    color: #363636;
+}
+
+.head {
+    margin-bottom: 32px;
+
+    width: 388px;
+    height: 40px;
+    left: 450px;
+    top: 152px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+
+    letter-spacing: 0.1px;
+
+
+    color: #363636;
+}
+
+.first {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.1px;
+
+    color: #363636;
+}
