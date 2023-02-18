@@ -5,7 +5,6 @@ import Action from './img/Icon_Action.svg';
 import { ReactComponent as ActionBurger } from './img/Icon_Action_burger.svg';
 import { ReactComponent as SquareWhite } from './img/icon-square-four.svg';
 import { ReactComponent as SquareGray } from './img/square_gray.svg';
-import { ReactComponent as Closr } from './img/close.svg';
 
 
 type NavigationProps = {

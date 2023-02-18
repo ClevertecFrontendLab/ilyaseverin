@@ -1,8 +1,4 @@
 import styles from "./comment.module.css";
-import { Menu } from "../menu/menu";
-import { ItemCard } from "../item-card/card";
-import { Navigation } from "../navigation/navigation";
-import data from "../../books.json"
 import { Rating } from "../rating/rating";
 import UserIcon from "./img/userIcon.png";
 import { Comments } from "../../redux-saga/book/initial-state";

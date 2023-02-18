@@ -9,8 +9,7 @@ import styles from "./book-page.module.css";
 
 import { Comment } from "../../components/comment/comment";
 import { Rating } from "../../components/rating/rating";
-import data from "../../books.json"
-import menu from "../../menu.json"
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
