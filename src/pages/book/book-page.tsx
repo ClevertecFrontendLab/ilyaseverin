@@ -17,9 +17,7 @@ import 'swiper/css/scrollbar';
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import { bookSelector, categoriesSelector } from '../../redux-saga/selectors';
-import { Loader } from '../../components/loader/loader';
-import { Error } from '../../components/error/error';
-import { Categories } from '../../redux-saga/categories/initial-state';
+
 
 
 
@@ -32,7 +30,7 @@ export const BookPage: React.FC = () => {
     const { burger, setBurger } = useContext(BurgerContext)
     const location = useLocation()
     const { bookId } = useParams();
-    const { category } = useParams();
+    const category = book.book.categories[0]
 
     const dispatch = useDispatch()
 
@@ -45,7 +43,7 @@ export const BookPage: React.FC = () => {
     return <div role="presentation" onClick={() => setBurger(false)} style={burger ? { zIndex: 1 } : { zIndex: 0 }}>
 
         <div className={styles.wrapper}>
-            <nav className={styles.headerText}> <NavLink to={`/books/${category}`}>{category}</NavLink>  /{book.book.title} </nav>
+            <nav className={styles.headerText}> <NavLink to={`/books/${category}`}>{category}</NavLink>  / {book.book.title} </nav>
         </div>
         <div className={styles.filling}>
             {book.isLoading === false &&
