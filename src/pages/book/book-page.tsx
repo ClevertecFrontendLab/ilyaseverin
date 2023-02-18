@@ -43,7 +43,7 @@ export const BookPage: React.FC = () => {
     return <div role="presentation" onClick={() => setBurger(false)} style={burger ? { zIndex: 1 } : { zIndex: 0 }}>
 
         <div className={styles.wrapper}>
-            <nav className={styles.headerText}> <NavLink to={`/books/${category}`}>{category}</NavLink>  / {book.book.title} </nav>
+            <nav className={styles.headerText}> <NavLink to={`/books/${!category ? 'all' : category}`}>{!category ? 'Все книги' : category}</NavLink>  / {book.book.title} </nav>
         </div>
         <div className={styles.filling}>
             {book.isLoading === false &&
