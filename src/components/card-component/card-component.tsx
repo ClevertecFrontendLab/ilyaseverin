@@ -1,29 +1,20 @@
-import { useOutletContext, useLocation, useNavigate, NavLink } from "react-router-dom";
-import { useCallback, useState } from "react";
+import { useParams } from "react-router-dom";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import styles from "./card-component.module.css";
-import data from "../../books.json"
 import { ItemCard } from "../item-card/card";
 import { ItemCardList } from "../item-card/item-card-list-element";
 import { Navigation } from "../navigation/navigation";
-
 import { booksSelector, categoriesSelector } from "../../redux-saga/selectors";
-import { Books } from "../../redux-saga/books/initial-state";
 
 export const CardComponent: React.FC = () => {
-    const location = useLocation()
-    const category = location.pathname.split('/')[2]
+    const { category } = useParams()
     const [filter, setFilter] = useState<boolean>(true)
     const books = useSelector(booksSelector)
     const categories = useSelector(categoriesSelector)
-    const categoryPath = categories.categories.find(categories => categories.path === category)
+    const categoryPath = categories.categories.find(categories => categories.name === category)
 
 
-    const to = useNavigate();
-    const navigate = useCallback((id: string) => {
-        const route = `/books/${id}`;
-        to(route);
-    }, [to])
 
     const changeFilter = (): void => setFilter(value => !value);
 

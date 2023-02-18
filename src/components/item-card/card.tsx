@@ -5,7 +5,6 @@ import styles2 from "./itemCardList.module.css"
 import CardImage from "./img/image.png";
 import AltImage from "./img/altImage.png";
 import { Rating } from "../rating/rating";
-import { useLink } from "../../hooks/use-liink";
 import { Books } from "../../redux-saga/books/initial-state";
 
 type Props = {

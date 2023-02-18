@@ -6,6 +6,7 @@
     left: 0;
     background: rgba(54, 54, 54, 0.3);
     z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .loaderAnimation {

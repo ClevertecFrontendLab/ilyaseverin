@@ -21,7 +21,7 @@ root.render(
           <Route path="/" element={<Layout />}>
             <Route element={<LayoutPage />}>
               <Route path="/" element={<Navigate to="/books/all" />} />
-              <Route path="/books/:category" element={<CardComponent />} />
+              <Route path="/:books/:category" element={<CardComponent />} />
               <Route path="/terms" element={<Terms contentView="terms" />} />
               <Route path="/contract" element={<Contract contentView="contract" />} />
             </Route>

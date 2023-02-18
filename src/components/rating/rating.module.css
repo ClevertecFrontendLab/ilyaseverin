@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
-    margin: 1% 0 2% 0;
+
+    align-items: center;
 }
 
 .wrapper img {
@@ -8,6 +9,8 @@
     height: 19px;
     margin-right: 1.75%;
 }
+
+
 
 @media screen and (max-width: 320px) {
     .wrapper img {
