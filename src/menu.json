@@ -1,0 +1,60 @@
+{
+    "categories": [
+        {
+            "title": "Бизнес-книги",
+            "id": "business"
+        },
+        {
+            "title": "Детективы",
+            "id": "detective"
+        },
+        {
+            "title": "Детские книги",
+            "id": "children"
+        },
+        {
+            "title": "Зарубежная литература",
+            "id": "foreign"
+        },
+        {
+            "title": "История",
+            "id": "history"
+        },
+        {
+            "title": "Классическая литература",
+            "id": "classic"
+        },
+        {
+            "title": "Компьютерная литература",
+            "id": "computers"
+        },
+        {
+            "title": "Книги по психологии",
+            "id": "psychology"
+        },
+        {
+            "title": " Культура и искусство",
+            "id": "culture"
+        },
+        {
+            "title": "Наука и образование",
+            "id": "science"
+        },
+        {
+            "title": "Публицистическая литература",
+            "id": "publicistic"
+        },
+        {
+            "title": "Справочники",
+            "id": "references"
+        },
+        {
+            "title": "Фантастика",
+            "id": "scifi"
+        },
+        {
+            "title": "Юмористическая литература",
+            "id": "humor"
+        }
+    ]
+}

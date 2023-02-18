@@ -1,0 +1,93 @@
+.footer {
+
+    width: 100%;
+    margin-bottom: 1%;
+    background: #ffffff;
+
+
+}
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContent {
+    width: 90%;
+    margin: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hr {
+    border: 1px solid #BFC4C9;
+    width: 90%;
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* desktop / Body - Large */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* main/dark */
+
+    color: #363636;
+}
+
+.right {
+    width: 20%;
+    align-items: center;
+    display: flex;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.1px;
+
+    /* main/dark */
+
+    color: #363636;
+
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .footerContent {
+        width: 70%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 5%;
+        width: 80%;
+    }
+
+
+
+}

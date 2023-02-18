@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+
+    align-items: center;
+}
+
+.wrapper img {
+    width: 20px;
+    height: 19px;
+    margin-right: 1.75%;
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .wrapper img {
+        width: 20px;
+        height: 26px;
+        margin-right: 6%;
+    }
+}
