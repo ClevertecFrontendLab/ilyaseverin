@@ -37,11 +37,10 @@ export const BookPage: React.FC = () => {
     <div role='presentation' onClick={() => setBurger(false)} style={burger ? { zIndex: 1 } : { zIndex: 0 }}>
       <div className={styles.wrapper}>
         <nav className={styles.headerText}>
-          {' '}
           <NavLink data-test-id='breadcrumbs-link' to={`/books/${!category ? 'all' : category}`}>
             {!category ? 'Все книги' : category === 'all' ? 'Все книги' : categoryPath?.name}
-          </NavLink>{' '}
-          / <span data-test-id='book-name'>{book.book.title}</span>{' '}
+          </NavLink>
+          / <span data-test-id='book-name'>{book.book.title}</span>
         </nav>
       </div>
       <div className={styles.filling}>
@@ -50,7 +49,6 @@ export const BookPage: React.FC = () => {
             <div className={styles.bookContentWrapper}>
               <div className={styles.bookTopWrapper}>
                 <Slider item={book.book} />
-
                 <div className={styles.rightTop}>
                   <div data-test-id='book-title' className={styles.titleText}>
                     {book.book.title}
@@ -133,7 +131,6 @@ export const BookPage: React.FC = () => {
 
               <div role='presentation' onClick={() => setToggle((v) => !v)} className={styles.boldText}>
                 <div data-test-id='button-hide-reviews' className={styles.inline}>
-                  {' '}
                   Отзывы
                   <span className={styles.reviewsNumber}>{!book.book.comments ? '0' : book.book.comments?.length}</span>
                   <div className={!toggle ? styles.ArrowDown : styles.ArrowUp} />
