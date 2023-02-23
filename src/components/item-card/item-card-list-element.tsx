@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import styles from "./itemCardList.module.css";
 import CardImage from "./img/image.png";
 import AltImage from "./img/altImage.png";
@@ -6,10 +6,19 @@ import { Rating } from "../rating/rating";
 import { Books } from "../../redux-saga/books/initial-state";
 
 
-const host = 'https://strapi.cleverland.by'
 
-export const ItemCardList: React.FC<{ item: Books }> = ({ item }) => (
-    <Link data-test-id='card' className={styles.wrapper} to={`/books/${item.categories}/${item.id}`}>
+type Props = {
+    item: Books;
+    find: string;
+}
+
+export const ItemCardList: React.FC<Props> = ({ item, find }) => {
+    const host = 'https://strapi.cleverland.by'
+    const { category } = useParams()
+    const reg = item.title.split(new RegExp(`(${find})`, 'gi'));
+    const colored = <span>{reg.map(reg => reg.toLowerCase() === find.toLowerCase() ? <span data-test-id='highlight-matches' style={{ color: "#FF5253" }}>{reg}</span> : reg)}</span>;
+
+    return <Link data-test-id='card' className={styles.wrapper} to={`/books/${category}/${item.id}`}>
 
 
         <div className={styles.card}>
@@ -17,7 +26,7 @@ export const ItemCardList: React.FC<{ item: Books }> = ({ item }) => (
             <img className={styles.image} src={item.image === null ? AltImage : host + item.image.url} alt="" />
             <div className={styles.rightWrapper}>
                 <div className={styles.topWrapper}>
-                    <p className={styles.titleStyle}>{item.title}</p>
+                    <p className={styles.titleStyle}>{colored}</p>
                     <p className={styles.autorNameStyle}>{item.authors}</p>
                 </div>
 
@@ -28,4 +37,4 @@ export const ItemCardList: React.FC<{ item: Books }> = ({ item }) => (
             </div>
 
         </div></Link>
-);
+};

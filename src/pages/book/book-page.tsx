@@ -24,26 +24,29 @@ import { bookSelector, categoriesSelector } from '../../redux-saga/selectors';
 
 
 export const BookPage: React.FC = () => {
-    const book = useSelector(bookSelector)
-    const categories = useSelector(categoriesSelector)
-    const [toggle, setToggle] = useState(false)
-    const { burger, setBurger } = useContext(BurgerContext)
-    const location = useLocation()
     const { bookId } = useParams();
-    const category = book.book.categories[0]
-
     const dispatch = useDispatch()
-
     useEffect(() => {
         dispatch(getBookRequest({ bookId }))
 
     }, [dispatch, bookId])
+    const book = useSelector(bookSelector)
+    const categories = useSelector(categoriesSelector)
+
+    const [toggle, setToggle] = useState(false)
+    const { burger, setBurger } = useContext(BurgerContext)
+    const location = useLocation()
+    const { category } = useParams();
+    // const category = book.book.categories[0]
+    const categoryPath = categories.categories.find(categories => categories.path === category)
+
+
 
 
     return <div role="presentation" onClick={() => setBurger(false)} style={burger ? { zIndex: 1 } : { zIndex: 0 }}>
 
         <div className={styles.wrapper}>
-            <nav className={styles.headerText}> <NavLink to={`/books/${!category ? 'all' : category}`}>{!category ? 'Все книги' : category}</NavLink>  / {book.book.title} </nav>
+            <nav className={styles.headerText}> <NavLink data-test-id='breadcrumbs-link' to={`/books/${!category ? 'all' : category}`}>{!category ? 'Все книги' : category === 'all' ? 'Все книги' : categoryPath?.name}</NavLink>  / <span data-test-id='book-name'>{book.book.title}</span> </nav>
         </div>
         <div className={styles.filling}>
             {book.isLoading === false &&
@@ -53,7 +56,7 @@ export const BookPage: React.FC = () => {
                             <Slider item={book.book} />
 
                             <div className={styles.rightTop}>
-                                <div className={styles.titleText}>{book.book.title}</div>
+                                <div data-test-id='book-title' className={styles.titleText}>{book.book.title}</div>
                                 <div className={styles.autorText}>{book.book.authors}</div>
                                 <button className={styles.button} type="button">Забронировать</button>
                             </div>
@@ -65,8 +68,8 @@ export const BookPage: React.FC = () => {
                         </div>
                         <div className={styles.boldText}>Рейтинг<hr className={styles.hr} /></div>
                         <div className={styles.ratingWrapper}>
-                            <Rating rating={book.book.rating} />
-                            <div className={styles.rating}>{!book.book.rating ? "0" : book.book.rating}</div>
+                            <div className={styles.rating}><Rating rating={book.book.rating} /></div>
+                            <div className={styles.ratingText}>{!book.book.rating ? <div className={styles.noRating}>ещё нет оценок</div> : book.book.rating}</div>
                         </div>
                         <div className={styles.boldText}>Подробная информация<hr className={styles.hr} /></div>
                         <div className={styles.table}>

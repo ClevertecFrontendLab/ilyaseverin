@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import { BurgerContext } from "../../context/burger-provider";
 import styles from "./menu.module.css";
 import { booksSelector, categoriesSelector } from "../../redux-saga/selectors";
+import { Book } from "../../redux-saga/book/initial-state";
+import { Books } from "../../redux-saga/books/initial-state";
 
 type Props = {
     dataIdShowcase: string
@@ -49,10 +51,10 @@ export const Menu: React.FC<Props> = ({ dataIdShowcase, dataBooks, dataTerms, da
             {books === 'books' && <hr className={styles.hr} />}
             <li className={styles.marginMid} style={{ display: (books === 'books' && toggle) ? '' : 'none' }}>
                 <ul className={styles.fontStyleCategories}>
-                    {!categories.isLoading && <li data-test-id={dataBooks} className={category === "all" ? styles.fontStyleColor : styles.fontStyleCategories} ><Link to='/books/all' >Все книги</Link></li>}
+                    {!categories.isLoading && <li role="presentation" data-test-id={`${dataBooks}-books`} onClick={() => setBurger(false)} className={category === "all" ? styles.fontStyleColor : styles.fontStyleCategories} ><Link to='/books/all' >Все книги</Link></li>}
                     <li className={styles.marginHard}>
                         <ul>
-                            {categories.categories.map((categories, idx) => <li role="presentation" className={categories.name === category ? styles.fontStyleColor : styles.fontStyleCategories} tabIndex={idx + 1} onKeyDown={() => navigate(categories.name)} onClick={() => navigate(categories.name)} key={categories.id} >{categories.name} <span className={styles.quantitiesFontStyle}>{allBooks.books.filter((book: any) => book.categories.includes(categories.name)).length}</span></li>)}
+                            {categories.categories.map((categories, idx) => <li role="presentation" className={categories.path === category ? styles.fontStyleColor : styles.fontStyleCategories} tabIndex={idx + 1} onKeyDown={() => navigate(categories.path)} onClick={() => navigate(categories.path)} key={categories.id} > <span data-test-id={`${dataBooks}-${categories.path}`}>{categories.name}</span> <span data-test-id={`${dataBooks}-book-count-for-${categories.path}`} className={styles.quantitiesFontStyle}>{allBooks.books.filter((book: Books) => book.categories.includes(categories.name)).length}</span></li>)}
                         </ul>
                     </li>
                 </ul>

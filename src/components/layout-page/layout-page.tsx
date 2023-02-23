@@ -15,7 +15,7 @@ import { Error } from '../error/error';
 export const LayoutPage: React.FC = () => {
     const { burger, setBurger } = useContext(BurgerContext)
     const dataIdShowcase = 'navigation-showcase';
-    const dataBooks = 'navigation-books'
+    const dataBooks = 'navigation'
     const dataTerms = 'navigation-terms'
     const dataContract = 'navigation-contract'
     // const [cord, setCord] = useState({
@@ -33,10 +33,10 @@ export const LayoutPage: React.FC = () => {
     const categories = useSelector(categoriesSelector)
     const books = useSelector(booksSelector)
 
-    useEffect(() => {
-        dispatch(getCategoriesRequest())
-        dispatch(getBooksRequest())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(getCategoriesRequest())
+    //     dispatch(getBooksRequest())
+    // }, [dispatch])
 
     return <div className={styles.wrapper} >
 

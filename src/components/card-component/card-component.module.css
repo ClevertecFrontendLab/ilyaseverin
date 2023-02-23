@@ -9,6 +9,23 @@
     margin-bottom: 62px;
 }
 
+.notFoundText {
+    margin: auto;
+    margin-top: 30%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+
+    color: #A7A7A7;
+
+}
+
 
 @media screen and (max-width: 768px) {
     .boooksContentWrapper {
@@ -27,6 +44,13 @@
 @media screen and (max-width: 320px) {
     .boooksContentWrapper {
         margin-top: 7%;
+    }
+
+    .notFoundText {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 50%;
     }
 
 }

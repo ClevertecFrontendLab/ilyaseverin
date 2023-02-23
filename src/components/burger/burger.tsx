@@ -13,7 +13,7 @@ export const BurgerMenu: React.FC = () => {
     const location = useLocation()
     const pathname = location.pathname as string
     const dataIdShowcase = 'burger-showcase';
-    const dataBooks = 'burger-books'
+    const dataBooks = 'burger'
     const dataTerms = 'burger-terms'
     const dataContract = 'burger-contract'
     useEffect(() => setBurger(false), [setBurger, location])
