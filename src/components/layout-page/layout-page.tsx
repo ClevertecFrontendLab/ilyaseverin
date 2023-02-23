@@ -33,10 +33,6 @@ export const LayoutPage: React.FC = () => {
     const categories = useSelector(categoriesSelector)
     const books = useSelector(booksSelector)
 
-    // useEffect(() => {
-    //     dispatch(getCategoriesRequest())
-    //     dispatch(getBooksRequest())
-    // }, [dispatch])
 
     return <div className={styles.wrapper} >
 
