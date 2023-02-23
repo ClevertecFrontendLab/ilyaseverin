@@ -53,7 +53,6 @@ export const Menu: React.FC<Props> = ({ dataIdShowcase, dataBooks, dataTerms, da
               }
             }}
           >
-            {' '}
             Витрина книг
             {books === 'books' && <div className={!toggle ? styles.ArrowDown : styles.ArrowUp} />}
           </div>
