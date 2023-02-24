@@ -1,163 +1,152 @@
 .wrapper {
-    display: flex;
-    width: 100%;
-    height: 8%;
+  display: flex;
+  width: 100%;
+  height: 8%;
 
-    background: #FFFFFF;
+  background: #ffffff;
 
-    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
-    border-radius: 10px;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 
 .card {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
 }
 
 .rightWrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2%;
 }
 
 .bottomWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .image {
-    width: 120px;
-    height: 170px;
-    box-sizing: border-box;
+  width: 120px;
+  height: 170px;
+  box-sizing: border-box;
 
+  background: #f9f9fa;
 
-    background: #F9F9FA;
-
-    border-radius: 5%;
+  border-radius: 5%;
 }
 
-
 .button {
-    width: 174px;
+  width: 174px;
 
-    height: 40px;
+  height: 40px;
 
-    top: 414px;
+  top: 414px;
 
-    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
-    border-radius: 20px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
 
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
 
-
-    color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .button:hover {
-    border: 1px solid #FF740F;
-    box-shadow: 0px 2px 5px rgba(54, 54, 54, 0.1);
+  border: 1px solid #ff740f;
+  box-shadow: 0px 2px 5px rgba(54, 54, 54, 0.1);
 }
 
 .button:active {
-    box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+  box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
 }
 
 .titleStyle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
 
-    color: #363636;
+  color: #363636;
 }
 
 .autorNameStyle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
 
-
-    color: #727272;
+  color: #727272;
 }
 
-
 @media screen and (max-width: 768px) {
-    .wrapper {
-
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-    }
+  .wrapper {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .wrapper {
+  .wrapper {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-    }
+  .titleStyle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 2%;
+  }
 
-    .titleStyle {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 2%;
-    }
+  .autorNameStyle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
 
+  .bottomWrapper {
+    flex-wrap: wrap;
+  }
 
-    .autorNameStyle {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-    }
+  .image {
+    width: 70px;
+    height: 100px;
+  }
 
-    .bottomWrapper {
-        flex-wrap: wrap;
-    }
+  .stars img {
+    width: 13px;
+    height: 12px;
+  }
 
-    .image {
-        width: 70px;
-        height: 100px;
-    }
-
-    .stars img {
-        width: 13px;
-        height: 12px;
-    }
-
-    .button {
-        margin-top: 10%;
-    }
-
-
+  .button {
+    margin-top: 10%;
+  }
 }

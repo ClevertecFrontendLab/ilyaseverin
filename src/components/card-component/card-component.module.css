@@ -1,32 +1,52 @@
 .boooksContentWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-bottom: 62px;
+  gap: 5.4%;
+}
+
+.notFoundText {
+  margin: auto;
+  margin-top: 30%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  color: #a7a7a7;
+}
+
+@media screen and (max-width: 768px) {
+  .boooksContentWrapper {
     width: 100%;
     display: flex;
     align-items: center;
 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 62px;
-}
-
-
-@media screen and (max-width: 768px) {
-    .boooksContentWrapper {
-        width: 100%;
-        display: flex;
-        align-items: center;
-
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-    }
-
+    gap: 3.5%;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .boooksContentWrapper {
-        margin-top: 7%;
-    }
+  .boooksContentWrapper {
+    margin-top: 7%;
+  }
 
+  .notFoundText {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 50%;
+  }
 }
